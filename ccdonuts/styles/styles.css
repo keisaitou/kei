@@ -1,0 +1,1479 @@
+/* -----------ヘッダー----------- */
+
+.headerInner{
+    width: 100%;
+    background: #EDE0D4;
+    padding: 24px 12px 0;
+}
+
+.headerContainer {
+    height: 53px;
+    display: flex;
+}
+
+h1 {
+    margin-left: 157px;
+}
+
+.headerContainer h1 img {
+    width: 62px;
+    margin-top: -8px;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 82px;
+    height: 35px;
+    margin-left: 62px;
+}
+
+.search {
+    margin-top: 16px;
+    display: flex;
+}
+
+.serchIcon{
+    width: 32px;
+    height: 35px;
+    border: 1px solid #7F5539;
+    background-color: #D9D9D9;
+    padding: 7.74px 6px;
+    background-image: url(../images/searchLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 8px;
+    height: 35px;
+    border: 1px solid #7F5539;
+    font-size: 24px;
+}
+
+.idName{
+    width: 100%;
+    padding: 12px 20px;
+    background: #fff;
+}
+
+.idNameBorder p,
+.idName p {
+    font-size: 12px;
+    color: #7F5539;
+}
+
+.idNameBorder{
+    width: 100%;
+    padding: 12px 20px;
+    background: #fff;
+    border-bottom: 1px solid #7F5539;
+}
+
+
+
+
+/* -----------ヘッダーエンド----------- */
+
+
+
+
+
+/* -----------トップページ----------- */
+/* -----------メイン----------- */
+/* メインイメージ */
+.maimImg{
+    width: 100%;
+}
+
+.maimImg img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* メインイメージ エンド*/
+
+
+
+/* ニューアイテム */
+.newItem{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.newItemInner {
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.item01{
+    background-image: url(../images/topProduct01.png);
+    background-repeat: no-repeat;
+    background-size: 157px 157px ;
+    width: 157px;
+    height: 157px;
+}
+
+.newItemInnerTxstOuter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FF8877;
+    margin: 4px 0 0 4px;
+}
+
+.newItemInnerTxstOuter h2 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+
+.summerCitrus {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    margin-top: 97px;
+    margin-left: 69px;
+}
+
+.item02{
+    background-image: url(../images/topProduct02.png);
+    background-repeat: no-repeat;
+    background-size: 157px 157px ;
+    width: 157px;
+    height: 157px;
+}
+
+.donutLife {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    text-align: center;
+    margin-top: 129px;
+}
+
+.item03{
+    background-image: url(../images/topBanner01.png);
+    background-repeat: no-repeat;
+    background-size: 335px 83px ;
+    width: 335px;
+    height: 83px;
+    margin-top: 20px;
+    padding: 0 4px;
+}
+
+.ProductInfo {
+    font-size: 12px;
+    font-weight: bold;
+    color: #7F5539;
+    font-family: "Noto Serif JP", serif;
+    text-align: right;
+    margin-top: 67px;
+}
+/* ニューアイテムエンド */
+
+
+
+/* 哲学 */
+.philosophy {
+    width: 100%;
+    height: 568px;
+    background-image: url(../images/topBackGrandImg.png);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.philosophy h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.philosophy p:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.philosophy p:nth-child(3) {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.philosophy p:nth-child(4) {
+    font-size: 18px;
+}
+/* 哲学エンド */
+
+
+/* ランキング */
+.ranking {
+    width: 100%;
+    padding: 19px 20px  82.4px;
+}
+
+.rankngH2 {
+    width: 140px;
+    margin: 0 auto 80px;
+    border-bottom: 2px solid #FFD233;
+    padding: 12px 0;
+}
+
+.rankngH2 h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.rankingContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rankingProduct {
+    width: 157.5px;
+    margin-bottom: 80px;
+}
+
+.rankingContainer .rankingProduct:nth-child(6),
+.rankingContainer .rankingProduct:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.rankingNo {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.rNo1{
+    background-color: #FFD233;
+}
+
+.rNo2{
+    background-color: #ccc;
+}
+
+.rNo3{
+    background-color: #D27C2C;
+}
+
+.rNo4{
+    background-color: #E8C2CA;
+}
+
+.rankingProduct img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.rankingProduct h3 {
+    color: #7F5539;
+    font-size: 16px;
+    line-height: 25.6px;
+    margin-bottom: 20px;
+}
+
+.rankingPrice {
+    font-size: 16px;
+    color: #BF0000;
+    margin-bottom: 20px;
+}
+
+.cartIn {
+    width: 148px;
+    padding: 12px 32px;
+    background: #7F5539;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+
+.cartIn p {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* ランキングエンド */
+/* -----------メインエンド----------- */
+
+/* -----------トップページエンド----------- */
+
+
+
+
+
+/* -----------プロダクトページ----------- */
+
+.productList {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.productList h2 {
+    margin: 0 auto 20px;
+    width: 80px;
+    border-bottom: 2px solid #FFD233;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mainManu {
+    width: 100%;
+    padding: 20px 0 80px 0;
+}
+
+.mainManu h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #7F5539;
+}
+
+.productListInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.productItem {
+    width: 157.5px;
+    margin-bottom: 80px;
+}
+
+.productItem img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.productName h4 {
+    color: #7F5539;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ProdutPlice {
+    font-size: 16px;
+    color: #BF0000;
+    margin-bottom: 20px;
+}
+
+/* -----------プロダクトページエンド----------- */
+
+
+
+
+
+/* -----------商品詳細ページproductProfile----------- */
+.productProfileContainer {
+    width: 100%;
+    padding: 20px 20px 80px;
+}
+
+.productImg {
+    width: 335px;
+    height: 335px;
+}
+
+.productImg img{
+    width: 100%;
+}
+
+.productInfoTxt h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7F5539;
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #E6CCB2;
+    margin-bottom: 20px;
+}
+
+.productInfoTxt p {
+    font-size: 16px;
+    color: #7F5539;
+    line-height: 25.6px;
+    font-weight: 500;
+    border-bottom: 1px solid #E6CCB2;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+
+.productInfoTxt p:nth-child(3){
+    border: none;
+}
+
+.productInfoTxt p span {
+    font-size: 16px;
+    color: #BF0000;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.producCounter {
+    width: 100%;
+    display: flex;
+}
+
+.productCounterBox {
+    width: 56px;
+    height: 36px;
+    margin-left: 10px;
+    border: 1px solid #7F5539;
+    position: relative;
+    font-size: x-large;
+    text-align: center;
+}
+
+.productCounterBox::after {
+    position: absolute;
+    content: "個";
+    margin-left: 60px;
+    top: 20px;
+    font-size: 16px;
+}
+
+.productProfilCartBtn {
+    width: 160px;
+    height: 36px;
+    margin-left: 31.5px;
+    background: #7F5539;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 36px;
+}
+
+.wishListBtn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #7F5539;
+    margin-left: 4px;
+}
+
+.wishListBtn::before {
+    content: "♡";
+    color: #BF0000;
+    font-size: 20px;
+}
+/* -----------商品詳細ページproductProfileエンド----------- */
+
+
+
+
+
+/* -----------カートページ----------- */
+
+.cartContainer{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.cartTotal {
+    width: 100%;
+    border: 2px solid #FFD233;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.cartTotal p {
+    color: #7F5539;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cartTotal p  span {
+    color: #BF0000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.CartConfirmation {
+    width: 148px;
+    padding: 12px;
+    background: #BF0000;
+    margin: 0 auto;
+}
+
+.cartImg {
+    width: 335px;
+    height: 335px;
+    margin-bottom: 20px;
+}
+
+.cartImg img{
+    width: 100%;
+}
+
+.CartConfirmation p {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.productName h2 {
+    color: #7F5539;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cartPlice {
+    font-size: 24px;
+    color: #BF0000;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.cartQuantity {
+    display: flex;
+    justify-content: space-between;
+    width: 124px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.cartQuantityBox {
+    width: 56px;
+    height: 24px;
+    padding: 4px 8px;
+    border: 1px solid #7F5539;
+}
+
+.cartQuantityBox::after {
+    content: "個";
+    font-size: 16px;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 4px
+}
+
+.cartQuantityBox p {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.recalculation {
+    display: block;
+    width: 140px;
+    height: 28px;
+    background: #ccc;
+    margin: 0 auto 20px;
+}
+
+.recalculation p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+
+.delete {
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    width: auto;
+    margin: 0px auto 40px;
+}
+
+.delete p{
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid;
+}
+
+.continue {
+    width: 160px;
+    height: 36px;
+    margin: 40px auto 80px;    
+    background: #7F5539;
+}
+
+.continue p {
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    font-size: 12px;
+}
+
+/* -----------カートページエンド----------- */
+
+
+
+
+
+/* フッター */
+.footer {
+    width: 100%;
+    background: #EDE0D4;
+}
+
+.footerInner {
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    position: relative;
+}
+
+.footerNav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    border-left: 2px solid #B392AC;
+    padding: 4px 0 0 12px;
+    margin-bottom: 24px;
+}
+
+.footerNav {
+    margin-bottom: 32px;
+}
+
+.footerNav ul li a {
+    color: #7F5539;
+    font-size: 12px;
+}
+
+.snsIcon {
+    display: flex;
+    justify-content: space-between;
+    width: 143px;
+}
+
+.snsIcon img:nth-child(1),
+.snsIcon img:nth-child(2) {
+    height: 32px;
+    width: 32px;
+}
+
+.snsIcon img:nth-child(3) {
+    height: 32px;
+    width: 39px;
+}
+
+.footerLogo {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    width: 72px;
+}
+
+.footerLogo img {
+    width: 100%;
+}
+
+.footerBottm {
+    width: 100%;
+    border-top: 1px solid #7F5539;
+    padding: 12px 0;
+}
+
+small {
+    display: block;
+    text-align: center;
+    color: #7F5539;
+    font-size: 10px;
+}
+/* フッターエンド */
+
+
+
+
+
+/* -----------ハンバーガーメニュー----------- */
+.hamburgerOuter {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    top: 24px;
+    left: 12px;
+}
+
+.hamburgerOuter div {
+    width: 100%;
+    height: 3px;
+    background:  #7F5539;
+    margin-bottom: 8px;
+}
+/* -----------ハンバーガーメニュー----------- */
+
+
+
+
+
+/* -----------PCサイト----------- */
+@media screen and (min-width:768px) {
+    .headerInner{
+        padding: 20px 0 0;
+    }
+
+    .headerContainer {
+        height: 118px;
+        display: flex;
+        padding: 32px 95px 0 145px;
+    }
+
+    h1 {
+        width: 87px;
+        margin: 0 auto;
+    }
+
+    .headerContainer h1 img {
+        width: 87px;
+        margin-top: -32px;
+    }
+
+    .loginContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 124px;
+        height: 54px;
+        margin-left: 95px;
+    }
+
+    .search {
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        background: #B392AC;
+        padding: 12px 95px 12px 0;
+    }
+
+    .serchIcon{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #7F5539;
+        background-color: #D9D9D9;
+        padding: 8px;
+        background-image: url(../images/searchLogo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .serchIcon img {
+        width: 24px;
+    }
+
+    input[type="text"] {
+        width: 320px;
+        background: #fff;
+        height: 40px;
+        border: 1px solid #7F5539;
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+
+    .idName{
+        width: 100%;
+        padding: 12px 0 12px 103px;
+        background: #fff;
+    }
+
+    .idName p {
+        font-size: 12px;
+        color: #7F5539;
+    }
+
+    /* -----------ヘッダーエンド----------- */
+
+
+
+
+    /* -----------トップページ----------- */
+
+
+    /* -----------メイン----------- */
+    /* メインイメージ */
+    .maimImg{
+        width: 100%;
+    }
+
+    .maimImg img {
+        height: 593px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* メインイメージ エンド*/
+
+
+
+    /* ニューアイテム */
+    .newItem{
+        width: 100%;
+        position: relative;
+        margin: 80px 0 ;
+    }
+
+    .newItemInner {
+        width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .item01{
+        background-image: url(../images/topProduct01.png);
+        background-repeat: no-repeat;
+        background-size: 480px 480px ;
+        width: 480px;
+        height: 480px;
+    }
+
+    .newItemInnerTxstOuter {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: #FF8877;
+        margin: 8px 0 0 8px;
+    }
+
+    .newItemInnerTxstOuter h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        line-height: 140px;
+    }
+
+    .summerCitrus {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        font-family: "Noto Serif JP", serif;
+        margin: 284px 0 0 217px;
+    }
+
+    .item02{
+        background-image: url(../images/topProduct02.png);
+        background-repeat: no-repeat;
+        background-size: 480px 480px ;
+        width: 480px;
+        height: 480px;
+    }
+
+    .donutLife {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        font-family: "Noto Serif JP", serif;
+        margin-top: 404px;
+    }
+
+    .item03{
+        background-image: url(../images/topBanner01.png);
+        background-repeat: no-repeat;
+        background-size: 100% 257px ;
+        width: 100%;
+        height: 257px;
+        margin-top: 80px;
+    }
+
+    .ProductInfo {
+        font-size: 36px;
+        font-weight: 500;
+        color: #7F5539;
+        font-family: "Noto Serif JP", serif;
+        margin: 197px 0 0 872px;
+        text-align: center;
+    }
+    /* ニューアイテムエンド */
+
+
+
+    /* 哲学 */
+    .philosophy {
+        width: 100%;
+        height: 667px;
+        background-size: 100%;
+        background-position: center;
+        background-image: url(../images/topBackGrandImg.png);
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        padding-top: 100px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .philosophy h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .philosophy p:nth-child(2) {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    .philosophy p:nth-child(3) {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .philosophy p:nth-child(4) {
+        font-size: 18px;
+    }
+    /* 哲学エンド */
+
+
+    /* ランキング */
+    .ranking {
+        width: 100%;
+        padding: 0 20px  120px;
+    }
+
+    .rankngH2 {
+        width: 224px;
+        margin: 0 auto 80px;
+        border-bottom: 2px solid #FFD233;
+        padding: 20px 0;
+    }
+
+    .rankngH2 h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .rankingContainer {
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .rankingProduct {
+        width: 320px;
+        margin-bottom: 80px;
+    }
+
+    .rankingNo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .rNo1{
+        background-color: #FFD233;
+    }
+
+    .rNo2{
+        background-color: #ccc;
+    }
+
+    .rNo3{
+        background-color: #D27C2C;
+    }
+
+    .rNo4{
+        background-color: #E8C2CA;
+    }
+
+    .rankingProduct img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rankingProduct h3 {
+        color: #7F5539;
+        font-size: 24px;
+        line-height: 38.4px;
+        margin-bottom: 20px;
+    }
+
+    .rankingPrice {
+        font-size: 24px;
+        color: #BF0000;
+        margin-bottom: 20px;
+    }
+
+    .cartIn {
+        width: 260px;
+        padding: 16px;
+        background: #7F5539;
+        cursor: pointer;
+        margin: 0 auto;
+    
+    }
+
+    .cartIn p {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /* ランキングエンド */
+
+    /* -----------トップページエンド----------- */
+
+
+
+
+    /* -----------プロダクトページ----------- */
+    .productList {
+        width: 100%;
+        padding: 100px 0 0 0;
+    }
+    
+    .productList h2 {
+        margin: 0 auto 80px;
+        width: 128px;
+        border-bottom: 2px solid #FFD233;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .mainManu {
+        width: 100%;
+        padding: 80px 0 120px 0;
+    }
+    
+    .mainManu h3 {
+        text-align: center;
+        font-size: 24px;
+        color: #7F5539;
+    }
+    
+    .productListInner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 143px;
+    }
+    
+    .productItem {
+        width: 320px;
+        margin-bottom: 120px;
+    }
+    
+    .productItem img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .productName h4 {
+        color: #7F5539;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .ProdutPlice {
+        font-size: 24px;
+        color: #BF0000;
+        margin-bottom: 20px;
+    }
+    /* -----------プロダクトページエンド----------- */
+
+
+
+
+
+
+
+    /* -----------商品詳細ページproductProfile----------- */
+    .productProfileInner {
+        display: flex;
+        justify-content: space-between;
+        width: 1040px;
+        margin: 80px auto 100px;
+    }
+
+    .productImg {
+        width: 540px;
+        height: 540px;
+    }
+
+    .productInfoTxt {
+        width: 480px;
+        margin-left: 40px;
+    }
+
+    .productInfoTxt h2 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        color: #7F5539;
+        padding: 0 0 20px 4px;
+        border-bottom: 1px solid #E6CCB2;
+        margin-bottom: 0px;
+    }
+
+    .productInfoTxt p {
+        font-size: 24px;
+        color: #7F5539;
+        line-height: 38.4px;
+        font-weight: 500;
+        border-bottom: 1px solid #E6CCB2;
+        padding: 40px 4px;
+        margin-bottom: 0;
+    }
+
+    .productInfoTxt p span {
+        font-size: 24px;
+        color: #BF0000;
+        margin-bottom: 40px;
+        border: none;
+    }
+
+    .productCounterBox {
+        width: 80px;
+        height: 52px;
+        margin-left: 10px;
+        border: 1px solid #7F5539;
+        position: relative;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .productCounterBox::after {
+        position: absolute;
+        content: "個";
+        /* margin-left: 88px;
+        font-size: 24px; */
+    }
+
+    .productProfilCartBtn {
+        width: 260px;
+        height: 52px;
+        margin-left: 52px;
+        background: #7F5539;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 52px;
+    }
+
+    .wishListBtn {
+        width: 52px;
+        height: 52px;
+        border: 1px solid #7F5539;
+        margin-left: 8px;
+    }
+    
+    .wishListBtn::before {
+        content: "♡";
+        color: #BF0000;
+        font-size: 29px;
+    }
+    /* -----------商品詳細ページproductProfileエンド----------- */
+
+
+
+
+
+    /* -----------カートページ----------- */
+
+    .cartContainer{
+        width: 100%;
+        padding: 0px 168px;
+    }
+
+    .cartFlexContaina {
+        display: flex;
+        justify-content: space-between;
+        width: 1040px;
+        margin: 0 auto 80px;
+    }
+
+    .cartFlexInnerContaina {
+        width: 665px;
+    }
+
+    .cartFlexInnerContaina2{
+        width: 665px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cartTotal {
+        max-width: 1040px;
+        border: 2px solid #FFD233;
+        padding: 40px;
+        margin: 80px auto;
+    }
+
+    .cartTotal p {
+        color: #7F5539;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .cartTotal p  span {
+        color: #BF0000;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .CartConfirmation {
+        width: 260px;
+        height: 52px;
+        background: #BF0000;
+        margin: 40px auto 0;
+        padding: 0;
+    }
+
+    .CartConfirmation p {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        line-height: 52px;
+    }
+
+    .cartImg {
+        width: 335px;
+        height: 335px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+
+    .cartImg img{
+        width: 100%;
+    }
+
+    .cartProductName {
+        width: 100%;
+        border-bottom: 1px solid #E6CCB2;
+        padding: 4px 0 16px 0;
+        margin-bottom: 20px;
+    }
+
+    .cartProductName h2 {
+        color: #7F5539;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .cartPlice {
+        font-size: 24px;
+        color: #BF0000;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .cartQuantity {
+        display: flex;
+        justify-content: space-between;
+        width: 172px;
+        margin: 0 26px 24px;
+        position: relative;
+    }
+
+    .cartQuantity p{
+        font-size: 24px;
+        line-height: 52px;
+    }
+
+    .cartQuantityBox {
+        width: 80px;
+        height: 52px;
+        padding: 0;
+        border: 1px solid #7F5539;
+    }
+
+    .cartQuantityBox::after {
+        content: "個";
+        font-size: 24px;
+        position: absolute;
+        margin-left: 84px;
+        bottom: 12px
+    }
+
+    .cartQuantityBox p {
+        text-align: right;
+        font-size: 24px;
+        font-weight: 500;
+        margin-right: 16px;
+    }
+
+    .recalculation {
+        display: block;
+        width: 160px;
+        height: 36px;
+        background: #ccc;
+        margin-left: 505px;    
+    }
+
+    .recalculation p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
+    .delete {
+        display: block;
+        background: rgba(0, 0, 0, 0);
+        width: auto;
+        margin-left: 570px;
+    }
+
+    .delete p{
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid;
+    }
+
+    .continue {
+        width: 260px;
+        height: 52px;
+        margin: 40px auto 80px;    
+        background: #7F5539;
+    }
+
+    .continue p {
+        text-align: center;
+        color: #fff;
+        line-height: 52px;
+        font-size: 20px;
+    }
+
+
+
+
+    /* -----------カートページエンド----------- */
+
+
+
+
+
+
+
+
+    /* フッター */
+    .footer {
+        width: 100%;
+        background: #EDE0D4;
+    }
+
+    .footerInner {
+        width: 100%;
+        padding: 20px 12px 40px 102px;
+        position: relative;
+    }
+
+    .footerNav ul {
+        display: flex;
+    }
+
+    .footerNav ul li {
+        box-sizing: border-box;
+        width: 170px;
+        height: 40px;
+        border-left: 2px solid #B392AC;
+        padding: 0 0 0 12px;
+        margin-bottom: 24px;
+    }
+
+    
+    .footerNav {
+        margin-bottom: 264px;
+    }
+
+    .footerNav ul li a {
+        color: #7F5539;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .snsIcon {
+        display: flex;
+        justify-content: space-between;
+        width: 183px;
+        margin: 0 auto;
+    }
+
+    .snsIcon img:nth-child(1),
+    .snsIcon img:nth-child(2) {
+        height: 32px;
+        width: 32px;
+    }
+
+    .snsIcon img:nth-child(3) {
+        height: 32px;
+        width: 39px;
+    }
+
+    .footerLogo {
+        position: absolute;
+        top: 124px;
+        left: 47%;
+        width: 144px;
+    }
+    .footerLogo img {
+        width: 100%;
+    }
+    
+    .footerBottm {
+        width: 100%;
+        border-top: 1px solid #7F5539;
+        padding: 20px 0;
+    }
+    
+    small {
+        display: block;
+        text-align: center;
+        color: #7F5539;
+        font-size: 12px;
+    }
+/* フッターエンド */
+
+/* -----------ハンバーガーメニュー----------- */
+    .hamburgerOuter {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        top: 32px;
+        left: 95px;
+        padding: 3.41px 0;
+    }
+
+    .hamburgerOuter div {
+        width: 100%;
+        height: 3px;
+        background:  #7F5539;
+        margin-bottom: 20.45px;
+    }
+/* -----------ハンバーガーメニュー----------- */
+}
