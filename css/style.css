@@ -1,14 +1,25 @@
+@charset "utf-8";
 body{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.bgPattern {
+    background:url(../img/backPattern.jpg) repeat left top ;
+}
 /* ヘッダー */
 .hd{
     width: 100%;
     height: 50px;
-    background: #fff6a9;
+    background: #000;
     margin-bottom: 50px;
 }
+
+/*隠しヘッダーナビゲーションをスマホでは隠しておく */
+.hdHidden {
+    position: absolute;
+    top: -100px; 
+}
+/* ナビゲーションエンド */
 
 @keyframes profileImg{
     0%{
@@ -22,33 +33,20 @@ body{
 }
 
 .profileImg{
-    width: 80%;
-    height: 150px;
+    width: 90%;
+    height: 187px;
     margin: 0 auto 50px;
-    border-radius: 75px;
+    border-radius: 17px;
     overflow: hidden;
     position: relative;
     animation-name: profileImg;
     animation-duration: 1.5s;
-
 }
 .profileImg img{
     width: 200%;
     position: absolute;
-    top: -42%;
+    top: -33%;
     left: -52%;
-}
-
-.purofileText{
-    width: 80VW;
-    margin: 0px auto 50px;
-    padding: 20px 15px;
-    font-size: 20px;
-    line-height: 26px;
-    color: #444444;
-    letter-spacing: 1px;
-    border-top: 1px solid #f8e969af;
-    border-bottom: 1px solid #f8e969af;
 }
 
 @keyframes slaidname{
@@ -62,7 +60,7 @@ body{
     }
 }
 
-.namae{
+.name{
     text-align: center;
     font-size: 32px;
     color: gray;
@@ -77,16 +75,16 @@ body{
 
 .topNav ul li a div{
     width: 80vw;
-    height: 50px;
-    background: #fff6a9;
-    border: 1px solid #f8e969af;
+    height: 80px;
+    border: 1px solid aquamarine;
     text-align: center;
-    line-height: 50px;
+    line-height: 80px;
     border-radius: 10px;
     margin: 0 auto 70px;
     font-size: 20px;
     font-weight: bold;
-    color: #444444;
+    color: aquamarine;
+    background: rgba(0,0,0,.6);
 }
 
 /* フッター */
@@ -107,53 +105,146 @@ body{
     line-height: 20px;
 }
 
-/* ----------プロフィールとギャラリー---------- */
-.workContainer{
-    width: 90vw;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
+/* ----------プロフィール---------- */
 
 .PcNav{
     display: none;
 }
 
-.workInner{
+.purofileText{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 15px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #444444;
+    letter-spacing: 1px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: rgba(255, 255, 255, .5);
+}
+
+.progiletextOuter {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, .4);
+}
+
+.progiletextOuter h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progiletextOuter ul li {
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+
+
+
+.workInner,
+.modal{
     width: 100%;
     padding: 15px;
     background: #ccc;
     border-radius: 15px;
     margin-bottom: 20px;
     opacity: 0;
-    margin-top: 150px;
+    margin-top: 50px;
+    border:1px solid aquamarine;
+}
+
+.modal.scrollactive{
+    opacity: 1;
+    margin-top: 0;
+    transition:all ease-in 0.8s;
+    cursor: pointer;
+    border: 5px solid rgba(0, 0, 0, 0);
+    width: 45%;
+    border-radius: 15px;
+}
+
+.workInner.scrollactive h2,
+.modal.scrollactive h2{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.workInner.scrollactive p,
+.modal.scrollactive p{
+    font-size: 15px;
+}
+
+.workInner img,
+.modal img{
+    width: 100%;
+    height: 30VH;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* ----------プロフィールエンド---------- */
+
+
+/* ----------ギャラリー---------- */
+
+.workContainer{
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .workInner.scrollactive{
     opacity: 1;
     margin-top: 0;
-    transition: all 1s ease-out;
-}
-
-.workContainer img{
+    transition:all ease-in 0.8s;
+    cursor: pointer;
+    border: 5px solid rgba(0, 0, 0, 0);
     width: 100%;
-    height: 30VH;
-    object-fit: cover;
     border-radius: 15px;
 }
 
-.workInner h2{
-    margin: 10px;
-    text-align: center;
-    font-size: 16px;
+.workInner img{
+    width: 100%;
 }
 
-/* ----------プロフィールとギャラリーエンド---------- */
+.workInner.scrollactive img{
+    width: 100%;
+}
+
+
+/* ----------ギャラリーエンド---------- */
 
 /* ----------お問い合わせフォーム---------- */
 .formSec{
-    background-color: lightgray;
+    background-color: rgba(0, 0, 0, .2);
     padding: 50px 10px;
+    margin-bottom: 100px;
 }
+
+.formSec p {
+    font-size: 18px;
+}
+
+.formSec p span{
+    padding: 5px;
+    background-color: #000;
+    margin-left: 10px;
+    font-size: 10px;
+    color: aquamarine;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
 form{
     width: 100%;
     margin:0 auto ;
@@ -165,10 +256,11 @@ textarea {
     border: 1px solid #444444;
     background: #fff;
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     padding: 4px 8px;
 }
+
 input:focus{
     outline: 2px solid lightskyblue;
 }
@@ -187,16 +279,105 @@ textarea:focus{
 }
 
 input[type="submit"]{
-    background: #000;
-    color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 18px 50px;
     letter-spacing: 4px;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: aquamarine;
 }
 /* ----------お問い合わせフォームエンド---------- */
+
+
+/* ----------お問い合わせフォーム確認画面---------- */
+.contactOutPutH2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactOutContainer{
+    width: 90vw;
+    background: #fff;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.contactOutInner{
+    margin-bottom: 20px;
+}
+
+.contactOutInner h3{
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.contactOutInner p{
+    background: rgb(163, 242, 216);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submitContainer{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitContainer button{
+    color:aquamarine;
+    background-color:#000;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+}
+/* ----------お問い合わせフォーム確認画面エンド---------- */
+
+
+
+
+
+
+/* ----------お問い合わせフォーム送信完了---------- */
+.contactSend {
+    width: 100%;
+    height: 70Vh;
+}
+
+.contactSendinner {
+    padding: 20px;
+    background: rgba(255, 255, 255, .4); 
+    margin:200px auto 100px;
+}
+
+.contactSendinner p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.contactSend a {
+    display:block;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px 10px;
+    width: fit-content;
+    margin: 0 auto;
+    background: #000;
+    color: aquamarine;
+}
+/* ----------お問い合わせフォーム送信完了エンド---------- */
+
+
+
 
 /* ------ハンバーガーメニュー------ */
 /* ボタン */
@@ -243,13 +424,14 @@ input[type="submit"]{
     position: fixed;
     top: 5px;
     right: 5px;
+    z-index: 10;
 }
 
 .hamburgerBtn.active span{
     display: block;
     width: 30px;
     height: 1px;
-    background: #fff;
+    background: aquamarine;
     position: relative;
     transition: transform 0.3s;
 }
@@ -282,12 +464,13 @@ input[type="submit"]{
 .hamburgerMenu.active{
     width: 250px;
     height: 100VH;
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
-    right: 0;
+    right: -1px;
     opacity: 1;
     transition: 0.5s;
+    z-index: 9;
 }
 
 .hamburgerMenu.active nav ul{
@@ -304,10 +487,199 @@ input[type="submit"]{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.menuBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 5;
+    opacity: 0;
+    transition: 0.8s;
+    visibility: hidden;
+}
+
+.menuBack.active {
+    opacity: 1;
+    transition: 0.8s;
+    visibility: visible;
+}
+
 /* ------ハンバーガーメニューエンド------ */
 
+
+/* --------モーダル-------- */
+.workContainer,
+.modalContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.modal{
+    width: 50%;
+    background: #ccc;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.modal.scrollactive{
+    opacity: 1;
+    margin-top: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.modalBk{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 0.8s;
+}
+
+.modalBk.active{
+    opacity: 1;
+    visibility: visible;
+    animation-name: modalBk;
+    animation-duration: 0.8s;
+}
+@keyframes modalBk{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+         opacity: 1;
+    }
+}
+
+.modalImg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s;
+}
+
+.modalImg.active{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    animation-name: modalImgAc;
+    animation-duration: 0.8s;
+}
+
+@keyframes modalImgAc{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.modalImg img{
+    width: 80%;
+}
+.modalImg.active img{
+    width: 80%;
+}
+/* --------モーダルエンド-------- */
+
+
+
+
+/* ------トップにスクロールボタン------ */
+.toTop{
+    width: 50px;
+    height: 50px;
+    background-color: #444444;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+    bottom: 10px;
+    right: 10px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.toTop.active{
+    opacity: 1;
+    transition: 0.5s;
+}
+/* ------トップにスクロールボタンエンド------ */
+
+
+
+/* ------ローディング画面------ */
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, .5);
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+.loading.close {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loadingTxt {
+    padding: 10px;
+    width: 100%;
+    background: black;
+}
+
+.loadingTxt p {
+    color: aquamarine;
+    font-size: 5vh;
+    text-align: center;
+    animation:loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+/* ------ローディング画面エンド------ */
+
+
+
+
+
 /* ----------PCサイト---------- */
-/* トップ */
+/* --------トップ-------- */
 @media screen and (min-width:640px) {
 
     .hd{
@@ -315,7 +687,7 @@ input[type="submit"]{
         margin-bottom: 0;
     }
 
-    .namae{
+    .name{
         text-align: left;
         font-size: 32px;
         color: gray;
@@ -342,14 +714,11 @@ input[type="submit"]{
 
     .purofileText{
         width: 800px;
-        margin: 0px auto 50px;
+        margin: 40px auto 50px;
         padding: 20px 15px;
         font-size: 20px;
         line-height: 26px;
-        color: #444444;
         letter-spacing: 1px;
-        border-top: 1px solid #f8e969af;
-        border-bottom: 1px solid #f8e969af;
         display: flex;
         justify-content: center;
     }
@@ -372,23 +741,30 @@ input[type="submit"]{
         transition: 0.5s;
     }
 
-    .topNav ul li:hover{
-        opacity: 0.8;
-        transition: 0.5s;
-    }
-
     .topNav ul li a div{
         width: 300px;
         height: 100px;
-        background: #fff6a9;
-        border: 1px solid #f8e969af;
-        text-align: center;
-        line-height: 100px;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid #000;
         border-radius: 10px;
         margin: 0 auto 70px;
         font-size: 20px;
         font-weight: bold;
         color: #444444;
+        transition: 0.3s;
+    }
+
+    .topNav ul li a div p{
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: 0.5rem;
+    }
+
+    .topNav ul li a div:hover{
+        border: 1px solid aquamarine;
+        color: aquamarine;
+        transition: 0.4s;
+        background: rgba(0,0,0,.6);
     }
 
     .topNav ul li div{
@@ -411,11 +787,11 @@ input[type="submit"]{
         text-align: center;
         line-height: 30px;
     }
-    /* トップエンド */
+    /* --------トップエンド-------- */
 
 
 
-    /* プロフィールとギャラリー */
+/* --------共通ヘッダー-------- */
         /* ナビゲーション */
 
     .PcNav{
@@ -431,73 +807,376 @@ input[type="submit"]{
 
     .PcNav ul li a{
         font-size: 20px;
-        color: #8d8d8d;
+        color: #fff;
         padding: 10px;
+        border-radius: 5px;
+        border:1px solid rgba(0, 0, 0, 0) ;
     }
 
     .PcNav ul li a:hover{
-        background: #444444;
+        border:1px solid aquamarine ;
         border-radius: 5px;
-        color: #fff;
+        color: aquamarine;
         transition: 0.5s;
     }
 
+
         /* ナビゲーションエンド */
 
-    .workContainer{
-        display: flex;
+        /*隠しヘッダーナビゲーション */
+        .hdHidden{
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            opacity: 0;
+            transition: 0.8s;
+            top: -70px;
+        }
+
+        .hdHidden.active {
+            /* display: block; */
+            opacity: 1;
+            height: 70px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            visibility: visible;
+            animation-name: hdAnimetion;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes hdAnimetion {
+            0%{
+                opacity: 0;
+                top: -70px;
+            }
+            100%{
+                top: 0;
+                opacity: 1;
+            }
+        }
+        
+        .hdHidden.active .name{
+            display: block;
+            text-align: left;
+            font-size: 32px;
+            color: rgb(255, 255, 255);
+            line-height: 70px;
+            margin-left: 20px;
+            animation-name: slidneme;
+        }
+
+        @keyframes slaidname{
+            0%{
+                transform:translateX(-200px);
+                opacity: 0;
+            }
+        
+            100%{
+                transform:translateX(0);
+            }
+        }
+        /* 隠しヘッダーナビゲーションエンド */
+    /* --------共通ヘッダーエンド-------- */
+
+
+/* プロフィール*/
+
+    .progiletextOuter {
         width: 80%;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        padding: 10px;
+        margin: 0 auto 20px;
+        background: rgba(255, 255, 255, .4);
+    
     }
 
-    .workInner{
-        width: 40%;
-        opacity: 0;
-        margin-top: 150px;
+    .progiletextOuter h3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 
-    .workInner.scrollactive{
+    .progiletextOuter ul li {
+        font-size: 15px;
+        border-bottom: 1px solid #999;
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
+        line-height: 1.5rem;
+    }
+
+    /* --------モーダル-------- */
+    .workInner,
+    .modal{
+        width: 45%;
+        background:#ccc;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 50px;
+        border-radius: 45px;
+    }
+
+    .workInner.scrollactive,
+    .modal.scrollactive{
         opacity: 1;
         margin-top: 0;
-        transition: all 0.5s;
+        transition:all ease-in 0.3s;
+        cursor: pointer;
+        border: 5px solid rgba(0, 0, 0, 0);
+        width: 45%;
+        border-radius: 15px;
     }
 
-    .workInner:hover{
-        opacity: .8;
+    .workInner.scrollactive:hover,
+    .modal.scrollactive:hover{
+        border: 5px solid aquamarine;
+        transition: border 0.3s;
     }
+
+    .modal.scrollactive h2{
+        font-size: 18px;
+
+    }
+
+    .workInner.scrollactive p,
+    .modal.scrollactive p{
+    font-size: 15px;
+    }
+
+    .modal img{
+        display: block;
+        width: 100%;
+        height: 75%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .modalBk{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+        transition:all 0.8s;
+    }
+
+    .modalBk.active{
+        opacity: 1;
+        visibility: visible;
+        transition: 0.8s;
+        animation-name: modalBk;
+        animation-duration: 0.8s;
+    }
+
+    .modalImg.active{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+        animation-name: modalImgAc;
+        animation-duration: 0.8s;
+    }
+    
+    @keyframes modalImgAc{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    
+    .modalImg img{
+        width: 80%;
+    }
+    .modalImg.active img{
+        width: 80%;
+    }
+
+    /* --------モーダルエンド-------- */
 
 
     .hamburgerBtn{
         display: none;
     }
-    /* プロフィールとギャラリーエンド */
+/* プロフィールエンド*/
+
+/* ギャラリー*/
+    .workContainer{
+        width: 90vw;
+    }
+    .workInner{
+        width: 45%;
+    }
+/* ギャラリーエンド*/
 
 
-    /* お問い合わせフォーム */
+/* お問い合わせフォーム */
 
     .formSec{
-        background-color: lightgray;
+        background-color: rgba(0, 0, 0, .2);
         padding: 50px 20%;
+        margin-bottom: 100px;
     }
 
-    
+    .formSec p {
+        font-size: 18px;
+    }
+
+    .formSec p span{
+        padding: 5px;
+        background-color: #000;
+        margin-left: 10px;
+        font-size: 10px;
+        color: aquamarine;
+        border-radius: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+    }
+
     input[type="text"],
     input[type="email"],
     textarea {
     border: 1px solid #444444;
     background: #fff;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 4px 8px;
     }
 
     input[type="submit"]:hover{
-        opacity: 0.8;
+        border: 1px solid aquamarine;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: aquamarine;
         transition: all 0.5s;
     }
 
     /* お問い合わせフォームエンド */
 
+    /* ----------お問い合わせフォーム確認画面---------- */
+    .contactOutPutH2{
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .contactOutContainer{
+        width: 60%;
+        background: #fff;
+        padding: 40px 0;
+        margin: 30px auto;
+        border-radius: 10px;
+    }
+
+    .contactOutInner{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        width: 50vw;
+        margin: 20px auto;
+    }
+
+    .contactOutInner h3{
+        font-weight: bold;
+        margin-bottom: 6px;
+        padding: 3px;
+        margin-right: 15px;
+        text-align: left;
+        min-width: 135px;
+    }
+
+    .contactOutInner p{
+        background: rgb(163, 242, 216);
+        padding: 10px;
+        border-radius: 5px;
+        width: 38vw;
+    }
+
+    .submitContainer{
+        width: 200px;
+        margin: 80px auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .submitContainer button{
+        color: #333;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+        border: 1px solid #000;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+
+    .submitContainer button:hover {
+        color: aquamarine;
+        background-color:black;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+        border: 1px solid aquamarine;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    /* ----------お問い合わせフォーム確認画面エンド---------- */
+
+
+
+
+
+    /* ----------お問い合わせフォーム送信完了---------- */
+
+    .contactSend {
+        width: 100%;
+        height: 70Vh;
+    }
+    
+    .contactSendinner {
+        padding: 20px;
+        background: rgba(255, 255, 255, .4); 
+        margin:200px auto 100px;
+    }
+    
+    .contactSendinner p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .contactSend a {
+        display:block;
+        border-radius: 8px;
+        font-size: 15px;
+        padding: 10px 10px;
+        width: fit-content;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0);
+        color: #000;
+        border: 1px solid #000;
+        transition: 0.5s;
+    }
+
+    .contactSend a:hover{
+        display:block;
+        background: #000;
+        color: aquamarine;
+        transition: 0.5s;
+    }
+
+    /* ----------お問い合わせフォーム送信完了エンド---------- */
 }
